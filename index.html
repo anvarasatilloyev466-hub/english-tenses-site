@@ -1,37 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>English Tenses</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English 12 Tenses</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+        }
+
+        .buttons-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        button.tense-btn {
+            margin: 8px;
+            padding: 15px 25px; /* button kattalashdi */
+            font-size: 16px;
+            border: 2px solid #1a73e8;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button.tense-btn:hover {
+            background-color: #1a73e8;
+            color: white;
+        }
+
+        .tense-section {
+            display: none;
+            padding: 20px;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 800px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .tense-section.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            color: #1a73e8;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <h1>English Tenses</h1>
-  <p>12 tenses explained in English • Uzbek • Tajik</p>
-</header>
+<h1>English 12 Tenses / Ingliz tili 12 zamoni / Забон англисӣ 12 замон</h1>
 
-<main class="tenses">
-  <div class="card">Present Simple</div>
-  <div class="card">Present Continuous</div>
-  <div class="card">Present Perfect</div>
-  <div class="card">Present Perfect Continuous</div>
+<!-- Buttons -->
+<div class="buttons-container">
+    <button class="tense-btn" data-target="present-simple">Present Simple</button>
+    <button class="tense-btn" data-target="present-continuous">Present Continuous</button>
+    <button class="tense-btn" data-target="present-perfect">Present Perfect</button>
+    <button class="tense-btn" data-target="present-perfect-continuous">Present Perfect Continuous</button>
+    <button class="tense-btn" data-target="past-simple">Past Simple</button>
+    <button class="tense-btn" data-target="past-continuous">Past Continuous</button>
+    <button class="tense-btn" data-target="past-perfect">Past Perfect</button>
+    <button class="tense-btn" data-target="past-perfect-continuous">Past Perfect Continuous</button>
+    <button class="tense-btn" data-target="future-simple">Future Simple</button>
+    <button class="tense-btn" data-target="future-continuous">Future Continuous</button>
+    <button class="tense-btn" data-target="future-perfect">Future Perfect</button>
+    <button class="tense-btn" data-target="future-perfect-continuous">Future Perfect Continuous</button>
+</div>
 
-  <div class="card">Past Simple</div>
-  <div class="card">Past Continuous</div>
-  <div class="card">Past Perfect</div>
-  <div class="card">Past Perfect Continuous</div>
+<!-- Tense Sections -->
+<div class="tense-section" id="present-simple">
+    <h2>Present Simple / Hozirgi oddiy zamon / Замони ҳозираи оддӣ</h2>
+    <p><strong>Structure:</strong> Subject + base verb (V1 / -s/-es 3rd person singular)</p>
+    <p><strong>Used:</strong> Habits, general truths, routines</p>
+    <p><strong>Example:</strong><br>
+        English: I play football every day.<br>
+        Uzbek: Men har kuni futbol o‘ynayman.<br>
+        Tajik: Ман ҳар рӯз футбол бозӣ мекунам.</p>
+    <p><strong>Difference:</strong> Habitual actions vs Present Continuous (ongoing actions)</p>
+    <p><strong>Additional info:</strong> 3rd person singular adds -s/-es; Question: Do/Does?; Negative: do/does not</p>
+</div>
 
-  <div class="card">Future Simple</div>
-  <div class="card">Future Continuous</div>
-  <div class="card">Future Perfect</div>
-  <div class="card">Future Perfect Continuous</div>
-</main>
+<div class="tense-section" id="present-continuous">
+    <h2>Present Continuous / Hozirgi davomli zamon/ Замони ҳозираи давомдор</h2>
+    <p><strong>Structure:</strong> Subject + am/is/are + verb-ing</p>
+    <p><strong>Used:</strong> Actions happening now, near-future plans</p>
+    <p><strong>Example:</strong><br>
+        English: She is cooking dinner now.<br>
+        Uzbek: U hozir kechki ovqat pishiryapti.<br>
+        Tajik: Вай ҳозир шомро омода мекунад.</p>
+    <p><strong>Difference:</strong> Present Simple is for habits; Present Continuous is for actions happening now</p>
+    <p><strong>Additional info:</strong> Question: Am/Is/Are + subject + verb-ing?; Negative: am/is/are + not + verb-ing</p>
+</div>
 
-<footer>
-  <p>© 2026 English Tenses</p>
-</footer>
+<div class="tense-section" id="present-perfect">
+    <h2>Present Perfect / Hozirgi mukammal zamon/ Замони ҳозираи мукаммал</h2>
+    <p><strong>Structure:</strong> Subject + have/has + past participle (V3)</p>
+    <p><strong>Used:</strong> Actions completed at present, experiences, results</p>
+    <p><strong>Example:</strong><br>
+        English: They have watched that movie.<br>
+        Uzbek: Ular o‘sha filmni ko‘rishgan.<br>
+        Tajik: Онҳо он филмро тамошо кардаанд.</p>
+    <p><strong>Difference:</strong> Past Simple vs Present Perfect: Present Perfect connects past with present result</p>
+    <p><strong>Additional info:</strong> Question: Have/Has + subject + V3?; Negative: have/has + not + V3</p>
+</div>
+
+<div class="tense-section" id="present-perfect-continuous">
+    <h2>Present Perfect Continuous / Hozirgi davomli mukammal zamon/ Замони ҳозираи мукаммали давомдор</h2>
+    <p><strong>Structure:</strong> Subject + have/has + been + verb-ing</p>
+    <p><strong>Used:</strong> Actions that started in the past and continue until now</p>
+    <p><strong>Example:</strong><br>
+        English: I have been studying for two hours.<br>
+        Uzbek: Men ikki soatdirki o‘qiyapman.<br>
+        Tajik: Ман ду соат боз меомӯзам.</p>
+    <p><strong>Difference:</strong> Emphasizes duration of action</p>
+    <p><strong>Additional info:</strong> Question: Have/Has + subject + been + verb-ing?; Negative: have/has + not + been + verb-ing</p>
+</div>
+
+<div class="tense-section" id="past-simple">
+    <h2>Past Simple / O‘tgan oddiy zamon / Замони гузаштаи оддӣ</h2>
+    <p><strong>Structure:</strong> Subject + past verb (V2)</p>
+    <p><strong>Used:</strong> Completed actions at a definite past time</p>
+    <p><strong>Example:</strong><br>
+        English: She went to the market yesterday.<br>
+        Uzbek: U kecha bozorga bordi.<br>
+        Tajik: Вай дирӯз ба бозор рафт.</p>
+    <p><strong>Difference:</strong> Specifies exact past time, unlike Present Perfect</p>
+    <p><strong>Additional info:</strong> Question: Did + subject + base verb?; Negative: did + not + base verb</p>
+</div>
+
+<div class="tense-section" id="past-continuous">
+    <h2>Past Continuous / O‘tgan davomli zamon/ Замони гузаштаи давомдор</h2>
+    <p><strong>Structure:</strong> Subject + was/were + verb-ing</p>
+    <p><strong>Used:</strong> Actions in progress at a specific past time</p>
+    <p><strong>Example:</strong><br>
+        English: I was reading when she called.<br>
+        Uzbek: U qo‘ng‘iroq qilganida men kitob o‘qiyapman edi.<br>
+        Tajik: Ман ҳангоми зангашон хондан будам.</p>
+    <p><strong>Difference:</strong> Past Simple is finished; Past Continuous emphasizes ongoing action</p>
+    <p><strong>Additional info:</strong> Question: Was/Were + subject + verb-ing?; Negative: was/were + not + verb-ing</p>
+</div>
+
+<div class="tense-section" id="past-perfect">
+    <h2>Past Perfect / O‘tgan mukammal zamon/ Замони гузаштаи мукаммал</h2>
+    <p><strong>Structure:</strong> Subject + had + V3</p>
+    <p><strong>Used:</strong> Action completed before another past action</p>
+    <p><strong>Example:</strong><br>
+        English: I had finished homework before dinner.<br>
+        Uzbek: Men kechki ovqatdan oldin uy vazifasini tugatgan edim.<br>
+        Tajik: Ман пеш аз хӯроки шом корро анҷом дода будам.</p>
+    <p><strong>Difference:</strong> Shows prior completion</p>
+    <p><strong>Additional info:</strong> Question: Had + subject + V3?; Negative: had + not + V3</p>
+</div>
+
+<div class="tense-section" id="past-perfect-continuous">
+    <h2>Past Perfect Continuous / O‘tgan davomli mukammal zamon / Замони гузаштаи мукаммали давомдор</h2>
+    <p><strong>Structure:</strong> Subject + had + been + verb-ing</p>
+    <p><strong>Used:</strong> Actions continuing up to a point in the past</p>
+    <p><strong>Example:</strong><br>
+        English: I had been working for 3 hours before he arrived.<br>
+        Uzbek: U kelishidan oldin men 3 soat ishlayotgan edim.<br>
+        Tajik: Ман пеш аз он ки ӯ расид, се соат кор мекардам.</p>
+    <p><strong>Difference:</strong> Emphasizes duration before another past action</p>
+    <p><strong>Additional info:</strong> Question: Had + subject + been + verb-ing?; Negative: had + not + been + verb-ing</p>
+</div>
+
+<div class="tense-section" id="future-simple">
+    <h2>Future Simple / Kelasi zamon / Замони оянда</h2>
+    <p><strong>Structure:</strong> Subject + will + base verb</p>
+    <p><strong>Used:</strong> Predictions, spontaneous decisions, future facts</p>
+    <p><strong>Example:</strong><br>
+        English: I will call you tomorrow.<br>
+        Uzbek: Men ertaga sizga qo‘ng‘iroq qilaman.<br>
+        Tajik: Ман фардо ба шумо занг мезанам.</p>
+    <p><strong>Difference:</strong> Emphasizes spontaneous or general future</p>
+    <p><strong>Additional info:</strong> Question: Will + subject + base verb?; Negative: will + not + base verb</p>
+</div>
+
+<div class="tense-section" id="future-continuous">
+    <h2>Future Continuous / Kelasi davomli zamon/ Замони ояндаи давомдор</h2>
+    <p><strong>Structure:</strong> Subject + will be + verb-ing</p>
+    <p><strong>Used:</strong> Actions in progress at a future time</p>
+    <p><strong>Example:</strong><br>
+        English: I will be studying at 6 pm.<br>
+        Uzbek: Men soat 6 da o‘qiyapman bo‘laman.<br>
+        Tajik: Ман соати 6 хондан хоҳам буд.</p>
+    <p><strong>Difference:</strong> Focus on ongoing action at a specific future time</p>
+    <p><strong>Additional info:</strong> Question: Will + subject + be + verb-ing?; Negative: will + not + be + verb-ing</p>
+</div>
+
+<div class="tense-section" id="future-perfect">
+    <h2>Future Perfect / Kelasi mukammal zamon / Замони ояндаи мукаммал</h2>
+    <p><strong>Structure:</strong> Subject + will have + V3</p>
+    <p><strong>Used:</strong> Actions completed before a certain future time</p>
+    <p><strong>Example:</strong><br>
+        English: I will have finished my homework by 8 pm.<br>
+        Uzbek: Men soat 8 ga qadar uy vazifasini tugatgan bo‘laman.<br>
+        Tajik: Ман то соати 8 кори хонагӣ анҷом дода хоҳам буд.</p>
+    <p><strong>Difference:</strong> Emphasizes completion before a future point</p>
+    <p><strong>Additional info:</strong> Question: Will + subject + have + V3?; Negative: will + not + have + V3</p>
+</div>
+
+<div class="tense-section" id="future-perfect-continuous">
+    <h2>Future Perfect Continuous / Kelasi davomli mukammal zamon/ Замони ояндаи мукаммали давомдор</h2>
+    <p><strong>Structure:</strong> Subject + will + have + been + verb-ing</p>
+    <p><strong>Used:</strong> Actions continuing up to a point in the future</p>
+    <p><strong>Example:</strong><br>
+        English: By next month, I will have been working here for 2 years.<br>
+        Uzbek: Keyingi oyga kelib, men bu yerda 2 yil ishlayotgan bo‘laman.<br>
+        Tajik: То моҳи оянда ман ду сол инҷо кор хоҳам кард.</p>
+    <p><strong>Difference:</strong> Focus on duration of future action before a certain time</p>
+    <p><strong>Additional info:</strong> Question: Will + subject + have + been + verb-ing?; Negative: will + not + have + been + verb-ing</p>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.tense-btn');
+    const sections = document.querySelectorAll('.tense-section');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Hammasini yopish
+            sections.forEach(sec => sec.classList.remove('show'));
+
+            // Faqat tanlangan bo‘limni ko‘rsatish animatsiya bilan
+            const targetId = btn.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+            targetSection.classList.add('show');
+        });
+    });
+</script>
 
 </body>
 </html>
